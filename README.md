@@ -64,6 +64,7 @@ fx director start --disable-tls -c director_config.yaml
 #### Azure VMの作成
 Azure PortalにてVMを２つ作成する。インスタンスタイプは問わないが、デモでは「Standard D8s v4」を使用した。
 VMはそれぞれ好きなリージョンに作成可能。同一リージョン内に作成する場合も異なるVNetに属させるのが良い。
+
 #### ライブラリのインストール
 ```Bash
 sudo apt update && sudo apt install python3.8-venv -y
@@ -86,7 +87,9 @@ fx envoy start \
     -dp 50051
 ```
 ---
-### Notebookマシン（ローカルPC）のセットアップ
+### Notebookノード（ローカルPC - Win10）のセットアップ
+極論、LinuxでPython3.8でJupyter Labが動けばどういった環境でも問題ないはずだが、デモではWin10を使用。
+
 #### WSL2のセットアップ
 https://learn.microsoft.com/ja-jp/windows/wsl/install
 
