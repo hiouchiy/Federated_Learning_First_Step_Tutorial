@@ -157,4 +157,4 @@ Jupyter Lab上で「pytorch_tinyimagenet.ipynb」を開き、後はノートブ�
 このプロジェクトは MITライセンスです。
 
 ## Original Code / 元のコード
-本リポジトリは[公式サンプル](https://github.com/intel/openfl/tree/develop/openfl-tutorials/interactive_api/PyTorch_TinyImageNet)をベースにAzure上での実行用にアレンジを加えたものです。
+本リポジトリは[公式サンプル](https://github.com/intel/openfl/tree/v1.5/openfl-tutorials/interactive_api/PyTorch_TinyImageNet)をベースにAzure上での実行用にアレンジを加えたものです。
