@@ -62,7 +62,8 @@ fx director start --disable-tls -c director_config.yaml
 ---
 ### Envoyノードのセットアップ
 #### Azure VMの作成
-Azure PortalにてVMを一つ作成する。インスタンスタイプは問わないが、デモでは「Standard D8s v4」を使用した。
+Azure PortalにてVMを２つ作成する。インスタンスタイプは問わないが、デモでは「Standard D8s v4」を使用した。
+VMはそれぞれ好きなリージョンに作成可能。同一リージョン内に作成する場合も異なるVNetに属させるのが良い。
 #### ライブラリのインストール
 ```Bash
 sudo apt update && sudo apt install python3.8-venv -y
