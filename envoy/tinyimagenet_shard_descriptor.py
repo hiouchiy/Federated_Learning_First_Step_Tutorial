@@ -89,10 +89,13 @@ class TinyImageNetShardDescriptor(ShardDescriptor):
     def download_data(self):
         """Download prepared shard dataset."""
         zip_file_path = self.common_data_folder / 'tiny-imagenet-200.zip'
-        os.makedirs(self.common_data_folder, exist_ok=True)
-        os.system(f'wget --no-clobber http://cs231n.stanford.edu/tiny-imagenet-200.zip'
+        if os.path.exists(zip_file_path):
+        	print(zip_file_path + " is already here.")
+        else:
+        	os.makedirs(self.common_data_folder, exist_ok=True)
+            os.system(f'wget --no-clobber http://cs231n.stanford.edu/tiny-imagenet-200.zip'
                   f' -O {zip_file_path}')
-        shutil.unpack_archive(str(zip_file_path), str(self.common_data_folder))
+            shutil.unpack_archive(str(zip_file_path), str(self.common_data_folder))
 
     def get_dataset(self, dataset_type):
         """Return a shard dataset by type."""
