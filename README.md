@@ -4,6 +4,8 @@ Intel(R) OpenFLを使用してFederated Learningを初めて動かすチュー�
 Federated Learningの第一歩として、Torchvisionにて提供されているMobileNet v2をImagenetのデータでFine Tuningするサンプルです。Directorノード1台、Envoyノード2台をそれぞれAzure VMを使用して動かします。
  
 ## Getting Started / スタートガイド
+下記のような環境を構築していきます。
+![デモ環境の構成](image/architecture.png) 
 ### Prerequisites / 必要条件
 #### Director ノード
 - インスタンスタイプは問わないが、デモでは「Standard D2s v4」を使用
