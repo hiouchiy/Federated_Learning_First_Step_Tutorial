@@ -153,7 +153,7 @@ Jupyter Lab上で「pytorch_tinyimagenet.ipynb」を開き、後はノートブ�
 
 ---
 
-## 【おまけ】シングルノードでのスタートガイド
+## 【おまけ】PCでのスタートガイド
 PC上でも同環境を構築することが可能です。
 ### Prerequisites / 必要条件
 #### PC
