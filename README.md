@@ -1,7 +1,7 @@
 # Federated Learning 事始め
-Intel(R) OpenFLを使用してFederated Learningを初めて動かすチュートリアルです。Azureの使用を前提としています。
+Intel(R) OpenFLを使用してFederated Learningを初めて動かすためのファーストステップガイドです。Azure上での環境構築を前提としています。
 
-Federated Learningの第一歩として、Torchvisionにて提供されているMobileNet v2をImagenetのデータでFine Tuningするサンプルです。Directorノード1台、Envoyノード2台をそれぞれAzure VMを使用して動かします。
+Federated Learningの第一歩として、Torchvisionにて提供されているMobileNet v2をImagenetのデータでFine Tuningするサンプルです。Directorノード1台、Collaborator(Envoy)ノード2台をそれぞれAzure VMを使用して動かします。
  
 ## Getting Started / スタートガイド
 下記のような環境を構築していきます。
