@@ -28,7 +28,8 @@ Federated Learningの第一歩として、Torchvisionにて提供されている
 #### Azure VMの作成
 Azure PortalにてVMを一つ作成する。インスタンスタイプは問わないが、デモでは「Standard D2s v4」を使用した。
 #### VMのポート開放
-ホストOSのポート「50001」番を開放ください。
+ホストOSのポート「50001」と「50002」番を開放ください。
+50001番は常駐プロセスの通信用、50002番は実験プロセス（学習プロセス）の通信用です。
 #### ライブラリのインストール
 ```Bash
 sudo apt update && sudo apt install python3.8-venv -y
